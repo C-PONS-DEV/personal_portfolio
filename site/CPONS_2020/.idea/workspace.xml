@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="34b5f808-ed72-436f-ad6a-c2091e9803c8" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1jEOVtV2QDrRbLDZ0MZ4JEcivrT" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Personal Portfolio Website/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.index.html" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="34b5f808-ed72-436f-ad6a-c2091e9803c8" name="Default Changelist" comment="" />
+      <created>1603365811289</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1603365811289</updated>
+      <workItem from="1603365812402" duration="7648000" />
+      <workItem from="1603386189897" duration="2000" />
+      <workItem from="1603396581201" duration="1123000" />
+      <workItem from="1603461383710" duration="3465000" />
+      <workItem from="1603474193671" duration="2163000" />
+      <workItem from="1603482860933" duration="594000" />
+      <workItem from="1603531007651" duration="2742000" />
+      <workItem from="1603573083182" duration="1894000" />
+      <workItem from="1603623110892" duration="446000" />
+      <workItem from="1603734449724" duration="573000" />
+      <workItem from="1604063919362" duration="321000" />
+      <workItem from="1604416735791" duration="110000" />
+      <workItem from="1604417382821" duration="275000" />
+      <workItem from="1604585161286" duration="146000" />
+      <workItem from="1604595343938" duration="971000" />
+      <workItem from="1604596582424" duration="2020000" />
+      <workItem from="1604600221242" duration="86000" />
+      <workItem from="1604655664967" duration="462000" />
+      <workItem from="1604765824642" duration="1907000" />
+      <workItem from="1604776785859" duration="151000" />
+      <workItem from="1605193386757" duration="759000" />
+      <workItem from="1605622320483" duration="833000" />
+      <workItem from="1606069572781" duration="514000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.php" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="221" y="89" key="SettingsEditor" timestamp="1604596571084">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="221" y="89" key="SettingsEditor/0.0.1440.900/1440.0.1366.768@0.0.1440.900" timestamp="1604596571084" />
+  </component>
+</project>
