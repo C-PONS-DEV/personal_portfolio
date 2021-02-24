@@ -2384,7 +2384,7 @@ input::-moz-focus-inner {
     background-repeat: no-repeat;
     background: center center;
     background-size: contain;
-    background-image: url(../images/icons/icon-quote.svg);
+    background-image: url(../images/icon-quote.svg);
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
     position: absolute;
@@ -3939,27 +3939,27 @@ html.no-csstransitions .s-hero__content {
 }
 
 .service-icon--product-design {
-    background-image: url(../images/icons/services/icon-product-design.svg);
+    background-image: url(../images/icon-product-design.svg);
 }
 
 .service-icon--branding {
-    background-image: url(../images/icons/services/icon-branding.svg);
+    background-image: url(../images/icon-branding.svg);
 }
 
 .service-icon--frontend {
-    background-image: url(../images/icons/services/icon-frontend.svg);
+    background-image: url(../images/icon-frontend.svg);
 }
 
 .service-icon--research {
-    background-image: url(../images/icons/services/icon-research.svg);
+    background-image: url(../images/icon-research.svg);
 }
 
 .service-icon--illustration {
-    background-image: url(../images/icons/services/icon-illustration.svg);
+    background-image: url(../images/icon-illustration.svg);
 }
 
 .service-icon--ecommerce {
-    background-image: url(../images/icons/services/icon-ecommerce.svg);
+    background-image: url(../images/icon-ecommerce.svg);
 }
 
 
@@ -4312,12 +4312,12 @@ html.no-csstransitions .s-hero__content {
 
 .testimonials .slick-prev {
     left: -100px;
-    background-image: url("../images/icons/icon-arrow-left.svg");
+    background-image: url("../images/icon-arrow-left.svg");
 }
 
 .testimonials .slick-next {
     right: -100px;
-    background-image: url("../images/icons/icon-arrow-right.svg");
+    background-image: url("../images/icon-arrow-right.svg");
 }
 
 .testimonial-slider {

@@ -1,0 +1,637 @@
+@import url(fonts/FontAwesome.otf);
+* {
+    scroll-behavior: auto;
+    font-family: 'FontAwesome', sans-serif;
+}
+
+body {
+    background: var(--white);
+    color: var(--black);
+}
+
+
+/* *******************************      Color management in the template
+******************************  */
+
+ :root {
+    --black: #131416;
+    --white: #f1f1f1;
+    --light-blue: #6cc8f5;
+    --blue: #0400fa;
+}
+
+
+/* *******************************      Body 
+******************************  */
+
+
+/* En-tête */
+
+header h1 {
+    text-transform: uppercase;
+    font-size: 70px;
+    font-family: serif;
+    text-align: center;
+    margin-top: -20px;
+}
+
+header h1 a {
+    background-image: linear-gradient(to right, var(--blue), var(--light-blue));
+    -webkit-background-clip: text;
+    color: transparent;
+    letter-spacing: .2rem;
+}
+
+header p {
+    color: #0400fa;
+    text-align: right;
+    margin-right: 20px;
+}
+
+
+/* Menu de navigation */
+
+nav {
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+}
+
+nav input {
+    display: none;
+}
+
+nav li,
+nav li a {
+    font-weight: bolder;
+    font-size: 20px;
+    margin: 0 10px;
+    color: var(--black);
+    text-decoration: none;
+}
+
+nav ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30px, 1fr));
+    list-style: none;
+    scale: 0;
+    border-radius: 4px;
+    transition: 0.4s;
+    transform-origin: top;
+}
+
+nav li ul {
+    scale: 0;
+    position: absolute;
+    visibility: collapse;
+    transition: 0.4s;
+    display: list-item;
+    transform-origin: top;
+}
+
+nav input#drop:checked~ul,
+nav li input#drop-2:checked~ul {
+    scale: 1;
+    visibility: visible;
+}
+
+
+/* Bannière d'accueil */
+
+.home .img {
+    width: 500px;
+    height: auto;
+}
+
+.home {
+    margin-left: 100px;
+    align-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.banner-img {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.banner-text {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.home h1 {
+    font-size: 40px;
+    color: var(--blue);
+    font-family: sans-serif;
+}
+
+
+/* Information */
+
+.infos {
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.phone {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.phone:hover,
+.clock:hover,
+.rdv:hover {
+    border: var(--black) 3px solid;
+    padding: 15px;
+}
+
+.clock {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.rdv {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+
+/* Soins */
+
+#services {
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#services h6 {
+    font-size: 25px;
+    color: var(--blue);
+}
+
+#services h3 {
+    font-size: 18px;
+    font-style: italic;
+}
+
+.soins {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-auto-rows: minmax(auto, auto);
+    margin-left: 100px;
+}
+
+.gene {
+    grid-column: 1;
+    grid-row: 2;
+    width: 500px;
+}
+
+.derma {
+    grid-column: 2;
+    grid-row: 2;
+    width: 500px;
+}
+
+.cardio {
+    grid-column: 3;
+    grid-row: 2;
+    width: 500px;
+}
+
+.covid {
+    grid-column: 4;
+    grid-row: 2;
+    width: 500px;
+}
+
+
+/* A propos */
+
+#about {
+    margin-top: 80px;
+    text-align: center;
+}
+
+#about h3 {
+    color: var(--blue);
+    font-size: 25px;
+}
+
+.a-propos {
+    display: grid;
+    grid-template-columns: repeat(3);
+    grid-auto-rows: minmax(auto, auto);
+}
+
+.humain {
+    grid-column: 1/5;
+    grid-row: 2;
+}
+
+.rapide {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.precis {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+
+/* Formulaire */
+
+#appointment {
+    margin-top: 50px;
+}
+
+#appointment img {
+    width: 500px;
+    height: auto;
+}
+
+.rdv-form {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2);
+    grid-auto-rows: minmax(auto, auto);
+}
+
+.form {
+    grid-column: 1;
+    grid-row: 2;
+    text-align: center;
+}
+
+.form h3 {
+    color: var(--blue);
+    margin-left: 60px;
+}
+
+.form input {
+    width: 300px;
+    height: 50px;
+    margin-bottom: 15px;
+    border: var(--blue) 3px solid;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.form button {
+    text-align: center;
+    padding: 12px 24px;
+    color: var(--white);
+    border-radius: 5px;
+    background: var(--blue);
+    box-shadow: 0 0 0 0 var(--light-blue);
+    animation: battement 2s infinite cubic-bezier(.66, 0, 0, 1);
+    text-decoration: none;
+}
+
+@keyframes battement {
+    to {
+        box-shadow: 0 0 0 15px var(--light-blue);
+    }
+}
+
+.img-form {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+
+/* Télécharger l'application */
+
+#application img {
+    width: 500px;
+    height: auto;
+}
+
+#application {
+    margin-top: 80px;
+}
+
+.appli {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2);
+    grid-auto-rows: minmax(auto, auto);
+}
+
+.img-appli {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.text-appli {
+    grid-column: 2;
+    grid-row: 2;
+    width: 500px;
+    align-items: center;
+    align-self: center;
+}
+
+.text-appli h3 {
+    font-size: 25px;
+    color: var(--blue);
+}
+
+.text-appli a {
+    color: var(--blue);
+    background-color: var(--light-blue);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* Médecins */
+
+#doctors h3 {
+    text-align: center;
+    font-size: 25px;
+    color: var(--blue);
+}
+
+#doctors h6 {
+    text-align: center;
+    font-size: 15px;
+    color: var(--black);
+}
+
+.card {
+    border: var(--black) 3px solid;
+    width: 350px;
+    height: 400px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.informations {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.card img {
+    width: 40%;
+    border-radius: 50%;
+    transition: all .3s;
+}
+
+.card h4,
+.card h6 {
+    transition: all .3s;
+}
+
+.card h4 {
+    margin-top: 15px;
+    color: var(--blue);
+}
+
+.card h6 {
+    font-size: 1.3em;
+}
+
+.card:hover img,
+.card:hover h4,
+.card:hover h6 {
+    transform: translateY(-100px);
+}
+
+.card-medecin {
+    margin-left: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(auto, auto);
+}
+
+.card1 {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.card2 {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.card4 {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+
+/* Blog */
+
+#news {
+    margin-top: 50px;
+}
+
+#news h3 {
+    font-size: 25px;
+    color: var(--blue);
+    text-align: center;
+}
+
+#news h6 {
+    font-size: 15px;
+    text-align: center;
+}
+
+.card-blog {
+    margin: 10px;
+    width: 300px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.card-blog .image img {
+    max-width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+
+.card-blog .content {
+    padding: 20px 30px;
+}
+
+.card-blog p {
+    min-height: 70px;
+}
+
+.wrapper-blog {
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    margin-left: 70px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.cardblog1 {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.cardblog2 {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.cardblog3 {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+
+/* Contact */
+
+#contact {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#contact h6 {
+    color: var(--blue);
+    font-size: 25px;
+    text-align: center;
+}
+
+#contact h3 {
+    font-size: 20px;
+    text-align: center;
+}
+
+form {
+    text-align: center;
+}
+
+input,
+textarea {
+    text-align: center;
+    width: 250px;
+    height: 50px;
+    margin-bottom: 15px;
+    margin-left: 25px;
+    border: var(--blue) 3px solid;
+    border-radius: 10px;
+}
+
+textarea {
+    width: 550px;
+    height: 100px;
+}
+
+#contact button {
+    text-align: center;
+    padding: 25px 50px;
+    color: var(--white);
+    border-radius: 5px;
+    background: var(--blue);
+    box-shadow: 0 0 0 0 var(--light-blue);
+    animation: battement 2s infinite cubic-bezier(.66, 0, 0, 1);
+    text-decoration: none;
+}
+
+@keyframes battement {
+    to {
+        box-shadow: 0 0 0 15px var(--light-blue);
+    }
+}
+
+
+/* Chiffres et témoignages */
+
+#facts {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.facts-h3 {
+    color: var(--blue);
+    font-size: 25px;
+}
+
+.nombre {
+    display: grid;
+}
+
+.consultations {
+    grid-column: 1;
+}
+
+.avis {
+    grid-column: 2;
+}
+
+
+/* Témoignage */
+
+.temoignage {
+    width: 500px;
+    height: auto;
+    border: var(--black) 3px solid;
+    padding: 15px 15px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* Footer */
+
+footer {
+    align-items: center;
+    align-content: center;
+    text-align: justify;
+    display: grid;
+    margin-left: 200px;
+    grid-template-columns: repeat(3);
+    grid-auto-rows: minmax(200px);
+}
+
+.div-info {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.div-nav {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.div-medecins {
+    grid-column: 3;
+    grid-row: 3;
+}
+
+
+/* Copyright */
+
+.copyright {
+    text-align: center;
+}
+
+.copyright a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+.copyright a:hover {
+    text-decoration: none;
+    color: var(--white);
+    background-color: var(--black);
+}
